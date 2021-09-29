@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ASMR</title>
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', snas-serif;}
+		.center { display: flex;  justify-content: center;}
+		body{background-color: black;}
+		h2{margin: 200px; color: white}
+	
+		
+		div{background: black; text-align: center;}
+		button{background-color: black; border:0; outline: 0;}
+
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<div id="title">
+			<h2>기분에 따른 ASMR SOUND</h2>
+		</div>
+
+<div class="center">
+	
+	
+    <button id="morningBut">
+    	<img id=wink src="winking.png">
+    </button>
+	<audio id="morningSnd" src="morning.mp3" ></audio>
+
+
+		
+	
+    <button id="comedyBut">
+    	<img id=ple src="plead.png">
+    </button>
+	<audio id="comedySnd" src="comedy.wav" ></audio>
+
+		
+	<button id="hiBut">
+		<img id=pou src="pouting.png">
+	</button>
+	<audio id="hiSnd" src="hi.wav" ></audio>
+
+	
+		
+	<button id="lofiBut">
+		<img id=diz src="dizzy.png">
+	</button>
+	<audio id="lofiSnd" src="lofi.wav" ></audio>
+
+	
+
+
+</div>
+
+
+
+	<script type="text/javascript">
+
+    var state = "play";
+
+		morningBut.onclick = function(){
+			if (state=="play") { 
+				morningSnd.play();
+			state="pause";
+			}
+			else{morningSnd.pause();
+				state = "play";}
+		} 
+		
+		comedyBut.onclick = function(){
+			if (state=="play") { 
+				comedySnd.play();
+			state="pause";
+			}
+			else{comedySnd.pause();
+				state = "play";}
+		} 
+		
+		hiBut.onclick = function(){
+			if (state=="play") { 
+				hiSnd.play();
+			state="pause";
+			}
+			else{hiSnd.pause();
+				state = "play";}
+		} 
+		
+		lofiBut.onclick = function(){
+			if (state=="play") { 
+				lofiSnd.play();
+			state="pause";
+			}
+			else{lofiSnd.pause();
+				state = "play";}
+		} 
+		
+		
+
+	</script>
+
+</body>
+</html>
